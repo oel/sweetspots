@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="game_save">Save</string>
+    <string name="game_restore">Restore</string>
+    <string name="game_confirm">Confirm</string>
+    <string name="info_success">Congratulations!!! Time:</string>
+    <string name="info_failure">Oops! Try again...</string>
+    <string name="info_game_saved">Current game state saved.</string>
+    <string name="info_game_restored">Game state restored.</string>
+</resources>
