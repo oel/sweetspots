@@ -3,6 +3,7 @@
 ---
 
 The Git repo contains source code for two separate independent applications:
+
 1. An Android application for playing Sweet Spots
 2. A Java application for solving and creating Sweet Spots games
 
