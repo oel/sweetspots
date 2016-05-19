@@ -21,17 +21,21 @@ The game consists of a square board composed of N rows x N columes of cells.  Th
 
 The code base of the Android application was repurposed from a sample app, Tic-tac-toe, that came with the Android SDK.  The Eclipse-based code has a good portion of it organized as a separate dependent project from the main project.
 
-This application was initially developed using an old version of Eclipse (Juno) and Android SDK (17.0.0) and only minimal effort has been made to make it build-able using more contemporary versions (Eclipse Mars and Android SDK 24.0.2). 
+This application was initially developed using an old version of Eclipse (Juno) and Android SDK (17.0.0) and only minimal effort has been made to make it build-able using more contemporary versions (Eclipse Mars and Android SDK 24.0.2).
 
 The application published on Google Play can be downloaded/installed from the following link:
 
 https://play.google.com/store/apps/details?id=com.genuine.android.sweetspots
 
+For a high-level walk-through of the board game application, there are a couple of blog posts at:
+
+http://blog.genuine.com/2015/12/an-android-board-game-sweet-spots/
+
 ---
 
 ### /sweetspots/java/ - Java application for solving and creating Sweet Spots games
 
-The games included in the Sweet Spots Android application were created using an independent Java application.  For each game, it automactically generates random colored-zones on the board and validates the game for a solution based on the rule requirement.  If no solution is found, it'll keep re-generating another random zone partitioning on the board till it finds a solution.
+The games included in the Sweet Spots Android application were created using an independent Java application.  For each game, it automatically generates random colored-zones on the board and validates the game for a solution based on the rule requirement.  If no solution is found, it'll keep re-generating another random zone partitioning on the board till it finds a solution.
 
 This Java application was also developed in Summer 2013 and refactored in Winter 2015, using the good old Ant as the build tool.
 
