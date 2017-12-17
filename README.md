@@ -11,7 +11,7 @@ The Git repo contains source code for two separate independent applications:
 
 This is an Android application initially developed in Summer 2013 as a mobile programming exercise, then refactored in Winter 2015 for publishing on Google Play.  The underlying game-playing logic follows an interesting board game called Alberi that is based on some mathematical puzzle designed by Giorgio Dendi.
 
-The game consists of a square board composed of N rows x N columes of cells.  The board is also partitioned into N contiguous colored-zones.  The goal is to distribute a number of treasure chests into the area with the following rules:
+The game consists of a square board composed of N rows x N columns of cells.  The board is also partitioned into N contiguous colored-zones.  The goal is to distribute a number of treasure chests into the area with the following rules:
 
 1. Each role must have 1 treasure chest
 2. Each column must have 1 treasure chest
