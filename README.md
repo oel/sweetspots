@@ -7,13 +7,15 @@ The Git repo contains source code for two separate independent applications:
 1. An Android application for playing Sweet Spots
 2. A Java application for solving and creating Sweet Spots games
 
-### /sweetspots/android/ - Android application for playing Sweet Spots
+<u>**UPDATE**</u>: For the Android app, an updated version (v2) is available at [this repo](https://github.com/oel/sweetspots-v2)
+
+### Android application for playing Sweet Spots
 
 This is an Android application initially developed in Summer 2013 as a mobile programming exercise, then refactored in Winter 2015 for publishing on Google Play.  The underlying game-playing logic follows an interesting board game called Alberi that is based on some mathematical puzzle designed by Giorgio Dendi.
 
 The game consists of a square board composed of N rows x N columns of cells.  The board is also partitioned into N contiguous colored-zones.  The goal is to distribute a number of treasure chests into the area with the following rules:
 
-1. Each role must have 1 treasure chest
+1. Each row must have 1 treasure chest
 2. Each column must have 1 treasure chest
 3. Each zone must have 1 treasure chest
 4. No treasure chests can be adjacent row-wise, column-wise or diagonally, to each other
@@ -29,11 +31,11 @@ https://play.google.com/store/apps/details?id=com.genuine.android.sweetspots
 
 For a high-level walk-through of the board game application, there are a couple of blog posts at:
 
-http://blog.genuine.com/2015/12/an-android-board-game-sweet-spots/
+https://blog.genuine.com/2015/12/an-android-board-game-sweet-spots/
 
 ---
 
-### /sweetspots/java/ - Java application for solving and creating Sweet Spots games
+### Java application for solving and creating Sweet Spots games
 
 The games included in the Sweet Spots Android application were created using an independent Java application.  For each game, it automatically generates random colored-zones on the board and validates the game for a solution based on the rule requirement.  If no solution is found, it'll keep re-generating another random zone partitioning on the board till it finds a solution.
 
@@ -41,7 +43,7 @@ This Java application was also developed in Summer 2013 and refactored in Winter
 
 ##### A. Command for creating a game:
 
-*java -cp <classPath> com.genuine.game.sweetspots.CreateGame <trace?1:0> <boardZoneFile> <boardSize> <targetsPerRow> <targetsPerCol> <targetsPerZone>*
+*java -cp <classPath> com.genuine.game.sweetspots.CreateGame &lt;trace?1:0&gt; &lt;boardZoneFile&gt; &lt;boardSize&gt; &lt;targetsPerRow&gt; &lt;targetsPerCol&gt; &lt;targetsPerZone&gt;*
 
 For instance, to create a game with 4x4 board size, go to /path/to/sweetspot/java/ and run the following command to generate the game zones in ./gamefiles/:
 
@@ -58,7 +60,7 @@ The generated game-zone file should look something like the following:
 
 ##### B. Command for solving a game:
 
-*java -cp <classPath> com.genuine.game.sweetspots.SolveGame <trace?1:0> <boardZoneFile> <boardSize> <targetsPerRow> <targetsPerCol> <targetsPerZone>*
+*java -cp <classPath> com.genuine.game.sweetspots.SolveGame &lt;trace?1:0&gt; &lt;boardZoneFile&gt; &lt;boardSize&gt; &lt;targetsPerRow&gt; &lt;targetsPerCol&gt; &lt;targetsPerZone&gt;*
 
 For instance, to solve the game created above, run the following command from /path/to/sweetspot/java/:
 
